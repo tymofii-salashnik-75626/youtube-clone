@@ -1,0 +1,337 @@
+body{
+    background-color: #FFFFFF;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#menu-btn{
+    margin-bottom: -10px;
+    width: 50px;
+    height: 50px;
+}
+#menu-logo{
+    margin-top: 4px;
+}
+#youtube-logo{
+    width: 125px;
+    margin-left: 10px;
+    margin-bottom: -2px;
+}
+#bell-button{
+ 
+    border-radius: 50vh;
+    /* display: table-cell;
+    vertical-align: middle; */
+    /* padding: 5px; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background-color: white;
+    border: none;
+}
+#bell-button:hover {
+    background-color: lightgray;
+}
+input{
+    height: 45px;
+    width: 600px;
+    border-radius: 25px;
+    padding: 10px;
+    margin-right: 8px;
+    border: 2px solid #C6C6C6;
+    font-size: 18px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#create-btn{
+    width: 120px;
+    height: 42px;
+    font-size: 14px;
+}
+
+.circle-button {
+    width: 40px !important;
+    height: 40px;
+}
+
+.button {
+    /* width: 40px; */
+    height: 40px;
+    border-radius: 50vh;
+    /* display: table-cell;
+    vertical-align: middle; */
+    /* padding: 5px; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    border: none;
+}
+
+.button:hover {
+    background-color: lightgray;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+#top-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    margin-top: 2px;
+    
+    /* Добавьте эти свойства: */
+    position: sticky;   /* Делает элемент "липким" */
+    top: 0;             /* Прижимает к самому верху экрана */
+    background-color: #FFFFFF; /* Белый фон, чтобы видео не просвечивало при скролле */
+    z-index: 1000;      /* Поднимает шапку над остальными элементами (видео и кнопками) */
+}
+
+#main-content{
+    display: flex;  
+    margin-top: 15px;      
+    padding-left: 32px;    
+    
+}
+
+#search-btn{
+    margin-left: -5px;
+    margin-right: 8px;
+    margin-bottom: -15px;
+}
+#micro-btn{
+    margin-bottom: -17px;
+    height: 45px;
+    width: 45px;
+}
+
+#search-content {
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+#user-content{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 8px;
+    margin-right: 11px;
+    align-items: center;
+}
+#user-btn{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 7px;
+}
+
+#bell-btn{
+    margin-top: -2px;
+    width: 50px;
+    height: 50px;
+}
+.main-video{
+    border-radius: 12px;
+}
+
+#author{
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+}
+
+#user-info{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2px;
+}
+#sub-info{
+    margin-left: 13px;
+}
+
+.sub-info-label{
+    margin: 0px;
+}
+#title-main-video{
+    margin: 3px 0px;
+    padding: 3px;
+    max-width: 1000px;
+}
+#under-h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#like-share{
+    display: flex;
+    justify-content: space-around;
+}
+
+#like{
+    width: 45px;
+    height: 45px;
+}
+.like-class{
+    display: flex;
+    align-items: center;
+}
+#like-share-button{
+    height: 40px;
+    width: 145px;
+    background-color: #F2F2F2;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    display: inline-flex;   
+    align-items: center; 
+    justify-content: center; 
+    gap: 3px;
+
+}
+
+#share-class{
+    margin-left: 18px;
+
+}
+#subscribe{
+    height: 40px;
+    width: 145px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+}
+#subscribe:hover{
+    background-color:#272727;
+}
+#like-share-button:hover{
+    background-color: lightgray;
+}
+
+.nickname{
+    font-size: 17px;
+    font-weight: 500;
+}
+.subs{
+    margin: 0px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #606060;
+}
+
+#description{
+    font-size: 14px;
+    background-color: #F2F2F2;
+    padding: 10px;
+    width: 985px;
+    height: auto;
+    border-radius: 15px;
+    gap: 10px;
+}
+#desc-info{
+    font-weight: 500;
+}
+
+#description p {
+    margin-top: 2px; /* Задайте любое значение: 0, 2px, 5px и т.д. */
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#full-desc{
+    font-weight: 500;
+}
+
+#comments{
+    max-width: 1000px;
+    text-align: center;
+    color: #181818;
+    margin-top: 30px;
+}
+
+#comments a{
+    text-decoration: none;
+    color: #065FD4;
+}
+
+#right-content{
+    margin-left:8px;
+}
+
+.small-video{
+    width: 455px;
+    height: 160px;
+    border-radius: 15px;
+    padding-left: 6px;
+    padding-top: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.small-video:hover{
+    background-color: #E4EBFB;
+}
+
+.small-video-info{
+    display: flex; 
+    flex-direction: column;
+    padding: auto;
+}
+
+
+#small-title{
+    font-size: 15px;
+    font-weight: 600;
+
+   /* Стили для ограничения строк и автоматического добавления троеточия */
+
+display: -webkit-box;
+/* Переключает отображение элемента в режим старой версии гибкого контейнера (Flexbox) от WebKit. 
+   Это необходимо, так как механизм ограничения строк исторически завязан именно на этом режиме. */
+
+-webkit-box-orient: vertical;
+/* Задает вертикальную ориентацию для этого блока (элементы внутри будут располагаться друг под другом). 
+   Без этого свойства браузер не поймет, в каком направлении нужно считать и обрезать строки. */
+
+-webkit-line-clamp: 2;
+/* Самое главное свойство. Оно указывает браузеру (в основном на движках Blink и WebKit: Chrome, Safari, Edge), 
+   что текст нужно обрезать ровно после 2-й строки. */
+
+line-clamp: 2;
+/* Современная стандартная (без префиксов) версия свойства. Добавляется для совместимости с новыми 
+   и будущими версиями всех браузеров, которые уже поддерживают чистый стандарт. */
+
+overflow: hidden;
+/* Прячет (обрезает) всё содержимое, которое не поместилось в границы элемента. 
+   Если эту строку убрать, лишний текст просто вывалится за пределы блока наружу. */
+
+text-overflow: ellipsis;
+/* Инструктирует браузер поставить троеточие («...») в самом конце текста, 
+   который был обрезан, сигнализируя пользователю, что у названия есть продолжение. */
+}
+#small-author{
+    color: #616161;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 3px 0px 2px 0px;
+}
+
+
+.icon-play {
+    font-size: 13px; 
+    margin-right: 2px;
+}

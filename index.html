@@ -1,0 +1,181 @@
+<html>
+    <head>
+        <title>YouTube</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css" />
+
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="top-content">
+            <div id="menu-logo">
+                <!-- <img id="menu-btn" class="user" src="pictures/menu.png"> -->
+                <i class="button circle-button icon-menu" style="font-size: 24px;"></i>
+                <img id="youtube-logo" src="pictures/mini-logo.png">
+            </div>
+            <div id="search-content">
+                <input type="text" placeholder="Поиск">
+                <button class="button circle-button"><i class="icon icon-search"></i></button>
+
+                <button class="button circle-button"><i class="icon icon-mic"></i></button>
+            </div>
+            <div id="user-content">
+                <!-- <img id="create-btn" src="pictures/create.png"> -->
+                <button id="create-btn"class="button"><i class="icon icon-plus"></i><strong>Создать</strong></button>
+                <button id="bell-button" class="circle-button"><i class="icon icon-bell"></i></button>
+                <img id="user-btn" src="pictures/user.png">
+            </div>
+        </div>
+        <div id="main-content">
+            <div id="left-content">
+                <iframe class="main-video" width="1000" 
+                        height="570"
+                        src="https://www.youtube.com/embed/lX0_X1kJfTo" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                </iframe>
+                <h2 id="title-main-video">Щенок в восторге от своей первой ванны</h2>
+                <div id="under-h2">
+                    <div id="user-info">
+                        <img id="author" src="pictures/user.png">
+                        <div id="sub-info">
+                            <!-- <img id="user-btn" class="user" src="pictures/user.png"> -->
+                            <label class="sub-info-label nickname">User</label><br>
+                            <label class="sub-info-label subs">Много подписчиков</label>
+                        </div>
+                        <button id="subscribe">Подписаться</button>
+                    </div>
+                    <div id="like-share"> 
+                        <div id="like-class">
+                            <button class=" like button circle-button"><i class="icon icon-thumbs-up"></i></button>
+                            <button class="like button circle-button"><i class="icon icon-thumbs-down"></i></button>
+                        </div>
+                        <div id="share-class">
+                            <button id="like-share-button"><i class="icon icon-share-2"></i><strong>Поделиться</strong></button>
+                            <button id="like-share-button"><i class="icon icon-save"></i><strong>Сохранить</strong></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="description">
+                    <label id="desc-info">2 509 704 просмотра  23 мая 2026 г.</label>
+                    <p>Щенок в восторге от своей первой ванны</p>
+                    <label id="full-desc">Развернуть</label>
+                </div>
+                <div id="comments">
+                <p>Комментарии отключены. <a href="https://support.google.com/youtube/answer/9706180?hl=ru">Подробнее…</a></p>
+                </div>
+            </div>
+             <div id="right-content">
+                <div class="small-video">
+                    <iframe class="main-video" width="260" 
+                        height="155"
+                        src="https://www.youtube.com/embed/5j2T_s7BdBc" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                    <div class="small-video-info">
+                        <label id="small-title">СРОЧНО ЕДЬ ВО ВЬЕТНАМ</label>
+                        <label id="small-author">Алексей Шевцов</label>
+                        <label id="small-author"><i class="icon icon-play"></i>832 тыс.  9 дн. назад</label>
+                    </div>
+                </div>
+                <div class="small-video">
+                    <iframe class="main-video" width="260" 
+                        height="155"
+                        src="https://www.youtube.com/embed/YDksPJl5LrM" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                    <div class="small-video-info">
+                        <label id="small-title">СПИРИТ - ФАЛЬКОНС! ФИНАЛ МАЖОРА</label>
+                        <label id="small-author">РАЙЗ</label>
+                        <label id="small-author"><i class="icon icon-play"></i>298 тыс.  6 часов назад</label>
+                    </div>
+                </div>
+                <div class="small-video">
+                    <iframe class="main-video" width="260" 
+                        height="155"
+                        src="https://www.youtube.com/embed/s6_WblaShKQ" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                    <div class="small-video-info">
+                        <label id="small-title">ПАПИЧ ИГРАЕТ в Super Meat Boy! 🥩 НАЙС ИГРА!?</label>
+                        <label id="small-author">Лучшее с папичем</label>
+                        <label id="small-author"><i class="icon icon-play"></i>136 тыс. 2 дня назад</label>
+                    </div>
+                </div>
+                <div class="small-video">
+                    <iframe class="main-video" width="260" 
+                        height="155"
+                        src="https://www.youtube.com/embed/PzCPKJn5mNg" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                    <div class="small-video-info">
+                        <label id="small-title">Выбрал 20 ЛУЧШИХ БИТОВ русского рэпа. Кого забыл?</label>
+                        <label id="small-author">БРОКЕН ДЭНС</label>
+                        <label id="small-author"><i class="icon icon-play"></i>453 тыс. 13 дней назад</label>
+                    </div>
+                </div>
+                <div class="small-video">
+                    <iframe class="main-video" width="260" 
+                        height="155"
+                        src="https://www.youtube.com/embed/Il73jL8YeoA" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                    <div class="small-video-info">
+                        <label id="small-title">Насколько УЖАСНЫ дома смешариков?</label>
+                        <label id="small-author">sndk</label>
+                        <label id="small-author"><i class="icon icon-play"></i>1,9 млн 4 недели назад</label>
+                    </div>
+                </div>
+                <div class="small-video">
+                    <iframe class="main-video" width="260" 
+                        height="155"
+                        src="https://www.youtube.com/embed/Yt8E-QSoqC0" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                    <div class="small-video-info">
+                        <label id="small-title">Как умирал главный СНГ сервер в майнкрафте</label>
+                        <label id="small-author">c21qx</label>
+                        <label id="small-author"><i class="icon icon-play"></i>207 тыс. 3 недели назад</label>
+                    </div>
+                </div>
+                <div class="small-video">
+                    <iframe class="main-video" width="260" 
+                        height="155"
+                        src="https://www.youtube.com/embed/h6QZpTSUflI" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                    <div class="small-video-info">
+                        <label id="small-title">Как УКРАДЕННАЯ Игра ИЗМЕНИЛА Мир - История Fortnite</label>
+                        <label id="small-author">VanuniFN</label>
+                        <label id="small-author"><i class="icon icon-play"></i>195 тыс. 10 дней назад</label>
+                    </div>
+                </div>
+            </div>       
+        </div>
+       
+
+    </body>
+</html>
