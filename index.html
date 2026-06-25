@@ -28,7 +28,7 @@
         </div>
         <div id="main-content">
             <div id="left-content">
-                <iframe class="main-video" width="1000" 
+                <iframe id="main-player" class="main-video" width="1000" 
                         height="570"
                         src="https://www.youtube.com/embed/lX0_X1kJfTo" 
                         title="YouTube video player" 
@@ -49,18 +49,19 @@
                     </div>
                     <div id="like-share"> 
                         <div id="like-class">
-                            <button class=" like button circle-button"><i class="icon icon-thumbs-up"></i></button>
-                            <button class="like button circle-button"><i class="icon icon-thumbs-down"></i></button>
+                            <button class="like button circle-button" id="like-btn"><i class="icon icon-thumbs-up"></i></button>
+                            <button class="like button circle-button" id="dislike-btn"><i class="icon icon-thumbs-down"></i></button>
                         </div>
                         <div id="share-class">
-                            <button id="like-share-button"><i class="icon icon-share-2"></i><strong>Поделиться</strong></button>
-                            <button id="like-share-button"><i class="icon icon-save"></i><strong>Сохранить</strong></button>
+                            <button id="share-btn" class="like-share-button"><i class="icon icon-share-2"></i><strong>Поделиться</strong></button>
+                            <button id="save-btn" class="like-share-button"><i class="icon icon-save"></i><strong>Сохранить</strong></button>
                         </div>
                     </div>
                 </div>
                 <div id="description">
                     <label id="desc-info">2 509 704 просмотра  23 мая 2026 г.</label>
                     <p>Щенок в восторге от своей первой ванны</p>
+                    <div id="extra-paragraphs"></div>
                     <label id="full-desc">Развернуть</label>
                 </div>
                 <div id="comments">

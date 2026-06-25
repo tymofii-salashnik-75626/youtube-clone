@@ -185,7 +185,7 @@ input::placeholder {
     display: flex;
     align-items: center;
 }
-#like-share-button{
+.like-share-button{
     height: 40px;
     width: 145px;
     background-color: #F2F2F2;
@@ -217,7 +217,7 @@ input::placeholder {
 #subscribe:hover{
     background-color:#272727;
 }
-#like-share-button:hover{
+.like-share-button:hover{
     background-color: lightgray;
 }
 
