@@ -5,7 +5,8 @@ const share = document.getElementById("share-btn");
 const videoTitleElement = document.getElementById("title-main-video");
 const mainPlayer = document.getElementById("main-player");
 const fullDesc = document.getElementById("full-desc");
-const extra = document.getElementById('extra-paragraphs');
+const extra = document.getElementById("extra-paragraphs");
+const subscribe = document.getElementById("subscribe");
 
 function progressBar(){
     alert("in progress");
@@ -39,8 +40,53 @@ fullDesc.addEventListener("click", function(){
         FullDescInfo = true;
     } 
     else{
-        FullDescInfo = false;
         extra.innerHTML = "";
         fullDesc.innerHTML = "Развернуть";
+        FullDescInfo = false;
+    }
+})
+
+let isLiked = false;
+let isDisliked = false;
+like.addEventListener("click",function(){
+    if (isLiked === true){
+        like.classList.remove("button-active");
+        isLiked = false;
+    }
+    else{
+        like.classList.add("button-active");
+        isLiked = true;
+    }
+    if (isDisliked === true) {
+            dislike.classList.remove("button-active");
+            isDisliked = false;
+        }
+})
+
+dislike.addEventListener("click",function(){
+    if (isDisliked === true){
+        dislike.classList.remove("button-active");
+        isDisliked = false;
+    }
+    else{
+        dislike.classList.add("button-active");
+        isDisliked = true;
+    }
+    if (isLiked === true) {
+            like.classList.remove("button-active");
+            isLiked = false;
+        }
+})
+
+let isSubscribed = false;
+subscribe.addEventListener("click", function(){
+    if (isSubscribed === true){
+        subscribe.innerHTML = "Подписаться";
+        subscribe.classList.remove("subscribe-active");
+        isSubscribed = false;
+    } else{
+        subscribe.innerHTML = "Отписаться";
+        subscribe.classList.add("subscribe-active");
+        isSubscribed = true;
     }
 })
