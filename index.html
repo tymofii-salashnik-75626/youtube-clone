@@ -9,7 +9,6 @@
     <body>
         <div id="top-content">
             <div id="menu-logo">
-                <!-- <img id="menu-btn" class="user" src="pictures/menu.png"> -->
                 <i class="button circle-button icon-menu" style="font-size: 24px;" onclick="progressBar()"></i>
                 <img id="youtube-logo" src="pictures/mini-logo.png">
             </div>
@@ -20,7 +19,6 @@
                 <button class="button circle-button" onclick="progressBar()"><i class="icon icon-mic"></i></button>
             </div>
             <div id="user-content">
-                <!-- <img id="create-btn" src="pictures/create.png"> -->
                 <button id="create-btn"class="button"><i class="icon icon-plus"></i><strong>Создать</strong></button>
                 <button id="bell-button" class="circle-button" onclick="progressBar()"><i class="icon icon-bell"></i></button>
                 <img id="user-btn" src="pictures/user.png" onclick="progressBar()">
@@ -41,7 +39,6 @@
                     <div id="user-info">
                         <img id="author" src="pictures/user.png">
                         <div id="sub-info">
-                            <!-- <img id="user-btn" class="user" src="pictures/user.png"> -->
                             <label class="sub-info-label nickname">User</label><br>
                             <label class="sub-info-label subs">Много подписчиков</label>
                         </div>
@@ -176,6 +173,17 @@
                 </div>
             </div>       
         </div>
+        <div id="create-modal" style="display: none;" >
+            <div class="modal-content">
+            <h3>Добавить новое видео</h3>
+            <input type="text" id="new-video-src" placeholder="Вставьте ссылку embed (https://www.youtube.com/embed/)"><br><br>
+            <input type="text" id="new-video-title" placeholder="Введите название видео"><br><br>
+            <div class="modal-buttons">
+                <button id="modal-add-btn">Опубликовать</button>
+                <button id="modal-close-btn">Отмена</button>
+            </div>
+        </div>
+    </div>
         <script src="index.js"></script>
     </body>
 </html>

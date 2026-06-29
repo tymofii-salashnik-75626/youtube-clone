@@ -8,6 +8,14 @@ const fullDesc = document.getElementById("full-desc");
 const extra = document.getElementById("extra-paragraphs");
 const subscribe = document.getElementById("subscribe");
 
+const createBtn = document.getElementById("create-btn");
+const createModal = document.getElementById("create-modal");
+const modalCloseBtn = document.getElementById("modal-close-btn");
+const modalAddBtn = document.getElementById("modal-add-btn");
+const newVideoSrc = document.getElementById("new-video-src");
+const newVideoTitle = document.getElementById("new-video-title");
+const rightContent = document.getElementById("right-content");
+
 function progressBar(){
     alert("in progress");
 }
@@ -89,4 +97,48 @@ subscribe.addEventListener("click", function(){
         subscribe.classList.add("subscribe-active");
         isSubscribed = true;
     }
+})
+
+createBtn.addEventListener("click", function() {
+    createModal.style.display = "flex"; // Показываем окно
+});
+
+modalCloseBtn.addEventListener("click", function() {
+    createModal.style.display = "none"; // Прячем окно
+});
+
+modalAddBtn.addEventListener("click", function() {
+    const srcValue = newVideoSrc.value;
+    const titleValue = newVideoTitle.value;
+
+    if (srcValue === "" || titleValue === "") {
+        alert("Заполните оба поля!");
+        return; // Останавливаем функцию, если поля пустые
+    }
+
+    const newVideoDiv = document.createElement("div");
+    newVideoDiv.classList.add("small-video"); 
+
+ 
+    newVideoDiv.innerHTML = `
+        <iframe class="main-video" width="260" height="155"
+            src="${srcValue}" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+        <div class="small-video-info">
+            <label id="small-title">${titleValue}</label>
+            <label id="small-author">User</label>
+            <label id="small-author"><i class="icon icon-play"></i>много млн. Только что</label>
+        </div>
+    `;
+
+    rightContent.insertBefore(newVideoDiv, rightContent.firstChild);
+    // rightContent.appendChild(newVideoDiv); поставило бы его тупо вниз
+
+    // Очищаем поля ввода и закрываем модальное окно
+    newVideoSrc.value = "";
+    newVideoTitle.value = "";
+    createModal.style.display = "none";
 })

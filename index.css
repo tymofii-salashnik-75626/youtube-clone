@@ -356,3 +356,46 @@ text-overflow: ellipsis;
 .subscribe-active:hover {
     background-color: lightgray !important;
 }
+
+#create-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный цвет */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 10px 20px 20px 20px;
+    border-radius: 15px;
+    width: 450px;
+}
+
+.modal-content input {
+    width: 100%;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  
+}
+
+#modal-add-btn {
+    background-color: #0f0f0f;
+    color: white;
+}
+.modal-buttons {
+    display: flex;       
+    justify-content: center; 
+    gap: 12px;   
+    margin-top: 10px;      
+}
